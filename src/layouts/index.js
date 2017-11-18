@@ -7,7 +7,7 @@ import './index.css'
 
 const Header = () => (
   <header role="header">
-    <Link to="/">The Backyard Sessions</Link>
+    <Link to="/" className="logo">The Backyard Sessions</Link>
   </header>
 )
 
