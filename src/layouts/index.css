@@ -1,11 +1,15 @@
 :root {
-	--light-grey-highlight: #566A70;
+	--dark-bg-highight: rgb(28, 28, 28);
+	--light-grey-highlight: rgb(109, 109, 109);
 }
 
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+
+  background-color: #000000;
+  color: #ffffff;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -33,21 +37,27 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
   line-height: 1.5;
   font-family: 'Abel', sans-serif;
+  font-size: 16px;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -78,4 +88,36 @@ date {
 
 a {
 	text-decoration: none;
+	color: #ffffff;
 }
+
+a:hover {
+	text-decoration: underline;
+}
+
+.wrapper {
+	width: 80%;
+	max-width: 60rem; /* 960px */
+}
+
+header[role="banner"] {
+	background-color: var(--dark-bg-highight);
+}
+.logo {
+	background: 0 0 no-repeat;
+	width: 45px;
+	height: 65px;
+}
+
+nav[role="navigation"] a {
+	font-family: 'Oswald', Arial, sans-serif;
+	text-transform: uppercase;
+	color: var(--light-grey-highlight);
+	transition: opacity 0.2s ease-in-out;
+}
+
+nav[role="navigation"] a:hover {
+	opacity: .6;
+	text-decoration: none;
+	transition: opacity 0.2s ease-in-out;
+} 
